@@ -174,39 +174,51 @@ class App(customtkinter.CTk):
         self.geometry("800x800")
         self.resizable(1, 1)
 
-        load.update()
-
         self.grid_columnconfigure(0, weight=1)
         self.grid_columnconfigure(1, weight=1)
         for row in range(4):
             self.grid_rowconfigure(row, weight=1)
 
-        self.checkbox_Your_mods = MyScrollableCheckboxFrame(self, title="Your mods", values=load.mods_names)
-        self.checkbox_Your_mods.grid(row=0, column=0, padx=10, pady=(10, 10), sticky="NSEW")
-        global Your_mods
-        Your_mods = self.checkbox_Your_mods
+        def list():
+            load.update()
+            self.checkbox_Your_mods = MyScrollableCheckboxFrame(self, title="Your mods", values=load.mods_names)
+            self.checkbox_Your_mods.grid(row=0, column=0, padx=10, pady=(10, 10), sticky="NSEW")
+            global Your_mods
+            Your_mods = self.checkbox_Your_mods
 
-        self.checkbox_Forts_mods = MyScrollableCheckboxFrame(self, title="Forts mods", values=load.mods_Fnames)
-        self.checkbox_Forts_mods.grid(row=0, column=1, padx=10, pady=(10, 10), sticky="NSEW")
-        global Your_Fmods
-        Your_Fmods = self.checkbox_Forts_mods
+            self.checkbox_Forts_mods = MyScrollableCheckboxFrame(self, title="Forts mods", values=load.mods_Fnames)
+            self.checkbox_Forts_mods.grid(row=0, column=1, padx=10, pady=(10, 10), sticky="NSEW")
+            global Your_Fmods
+            Your_Fmods = self.checkbox_Forts_mods
 
-        self.checkbox_Your_maps = MyScrollableCheckboxFrame(self, title="Your maps", values=load.maps_names)
-        self.checkbox_Your_maps.grid(row=1, column=0, padx=10, pady=(10, 10), sticky="NSEW")
-        global Your_maps
-        Your_maps = self.checkbox_Your_maps
+            self.checkbox_Your_maps = MyScrollableCheckboxFrame(self, title="Your maps", values=load.maps_names)
+            self.checkbox_Your_maps.grid(row=1, column=0, padx=10, pady=(10, 10), sticky="NSEW")
+            global Your_maps
+            Your_maps = self.checkbox_Your_maps
 
-        self.checkbox_Forts_maps = MyScrollableCheckboxFrame(self, title="Forts maps", values=load.maps_Fnames)
-        self.checkbox_Forts_maps.grid(row=1, column=1, padx=10, pady=(10, 10), sticky="NSEW")
-        global Your_Fmaps
-        Your_Fmaps = self.checkbox_Forts_maps
+            self.checkbox_Forts_maps = MyScrollableCheckboxFrame(self, title="Forts maps", values=load.maps_Fnames)
+            self.checkbox_Forts_maps.grid(row=1, column=1, padx=10, pady=(10, 10), sticky="NSEW")
+            global Your_Fmaps
+            Your_Fmaps = self.checkbox_Forts_maps
+
+        def update_list():
+            load.clear()
+
+            Your_mods.destroy()
+            Your_Fmods.destroy()
+            Your_maps.destroy()
+            Your_Fmaps.destroy()
+
+            list()
+
+        list()
 
         buttons = {}
-        defs  = [run_forts, load_mods, load_maps, create_backup, load_backup]
-        names = ["Запустить Forts", "Загрузить Моды", "Загрузить Карты", "Создать Backup","Загрузить Backup"]
+        bdefs  = [run_forts, load_mods, load_maps, create_backup, load_backup, update_list]
+        bnames = ["Запустить Forts", "Загрузить Моды", "Загрузить Карты", "Создать Backup", "Загрузить Backup", "Обновить список модов"]
 
-        for i in range(len(names)):
-            button = customtkinter.CTkButton(self, text=names[i], command=defs[i])
+        for i in range(len(bnames)):
+            button = customtkinter.CTkButton(self, text=bnames[i], command=bdefs[i])
             button.grid(row=i + 4, column=0, columnspan=2, padx=10, pady=(0, 10), sticky='EW')
             buttons[f"button{i}"] = button
 
