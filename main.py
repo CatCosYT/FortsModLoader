@@ -66,7 +66,6 @@ def load_backup():
 
     for i in range(len(pmods)):
         delete_folder_contents(modsp[mods.index(tmods[i])])
-        print(f"data\\temp\\mods\\{tmods[i]}")
         copy_folder(f"data\\temp\\mods\\{tmods[i]}", modsp[mods.index(tmods[i])])
     for i in range(len(pmaps)):
         delete_folder_contents(mapsp[maps.index(tmaps[i])])
