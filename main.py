@@ -35,6 +35,64 @@ def load_maps():
         print('\033[91m' + '!!!ERROR!!! колличество выбраных карт которые можно заменить меньше количества выбраных карт которые нужно установить !!!ERROR!!!' + '\033[0m')
     else:
         for i in range(len(pmaps)):
+            directory1 = os.fsencode(mapsp[maps.index(tmaps[i])])
+            directory2 = os.fsencode(Maps[i])
+
+            for file in os.listdir(directory1):
+                filename = os.fsdecode(file)
+                if filename.endswith(".fwe"): 
+                    fwe = filename
+                elif filename.endswith(f"{tmaps[i]}.lua"): 
+                    lua = filename
+                elif filename.endswith(".spr"): 
+                    spr = filename
+                elif filename.endswith("1.jpg"): 
+                    jpg1 = filename
+                elif filename.endswith("2.jpg"): 
+                    jpg2 = filename
+                elif filename.endswith("3.jpg"):
+                    jpg3 = filename
+                else:
+                    os.system('color 04')
+                    print("!!!ERROR1!!!")
+
+            for file in os.listdir(directory2):
+                filename = os.fsdecode(file)
+                if filename.endswith(".fwe"): 
+                    try:
+                        os.rename(f"addons\\maps\\{pmaps[i]}\\{filename}", f"addons\\maps\\{pmaps[i]}\\{fwe}")
+                    except:
+                        print("!!!ERROR!!!")
+                elif filename.endswith(f".lua"): 
+                    try:
+                        if filename != "displayname.lua":
+                            os.rename(f"addons\\maps\\{pmaps[i]}\\{filename}", f"addons\\maps\\{pmaps[i]}\\{lua}")
+                    except:
+                        print("!!!ERROR!!!")
+                elif filename.endswith(".spr"): 
+                    try:
+                        os.rename(f"addons\\maps\\{pmaps[i]}\\{filename}", f"addons\\maps\\{pmaps[i]}\\{spr}")
+                    except:
+                        print("!!!ERROR!!!")
+                elif filename.endswith("1.jpg"):
+                    try:
+                        os.rename(f"addons\\maps\\{pmaps[i]}\\{filename}", f"addons\\maps\\{pmaps[i]}\\{jpg1}")
+                    except:
+                        print("!!!ERROR!!!")
+                elif filename.endswith("2.jpg"): 
+                    try:
+                        os.rename(f"addons\\maps\\{pmaps[i]}\\{filename}", f"addons\\maps\\{pmaps[i]}\\{jpg2}")
+                    except:
+                        print("!!!ERROR!!!")
+                elif filename.endswith("3.jpg"): 
+                    try:
+                        os.rename(f"addons\\maps\\{pmaps[i]}\\{filename}", f"addons\\maps\\{pmaps[i]}\\{jpg3}")
+                    except:
+                        print("!!!ERROR!!!")
+                else:
+                    os.system('color 04')
+                    print("!!!ERROR2!!!")
+
             delete_folder_contents(mapsp[maps.index(tmaps[i])])
             copy_folder(Maps[i], mapsp[maps.index(tmaps[i])])
 
