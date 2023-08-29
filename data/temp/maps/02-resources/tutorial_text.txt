@@ -1,0 +1,51 @@
+Just before the oil ran out a new compact power technology was developed. There was no time to convert the world's transportation to avoid collapse. The military is using the technology to secure the deposits of the rare earth metals needed to run the reactors.
+
+This is one of the new reactors; protect it with everything you've got.
+
+The health of the reactor is shown on this bar. When the bar reaches the end the reactor will explode, taking the fort with it.
+
+There are two resources we can collect: metal and energy. The reactor produces a baseline of power to operate and expand the fort. It also produces metal as a bye product of the rare earth metal processing.
+
+To increase our metal supply you can build new mines on ground containing metal ore.
+
+Select the mine and build a new mine within range of our foundations.
+
+Suitable ground is shown in green. Notice that you can build mines inside the fort.
+
+Good. It costs us some metal and energy to build the mine, but when the mine has finished construction the metal supply will increase. Soon we won't be able to store all of the metal we are producing. To increase our metal storage capacity we can build a metal store. Select it now.
+
+Unlike a mine, the metal store must be built on a platform in the fort. Find a place to build a new metal store.
+
+Great. The extra storage capacity will allow us to build more expensive items and repair widespread damage quickly.
+
+We are unable to build new reactors in the field. We can increase our energy supply, however, by building wind turbines. Select the wind turbine for construction.
+
+Turbines are built on the fort like a metal store, but require exposure to winned to operate efficiently. The higher the turbine is and the less obstruction on either side, the more energy it will produce. Try to build a turbine with a high efficiency.
+
+This position will not generate much power. Elevate the turbines and open holes in the fort to let the winned through.
+
+Well done. A windy position will produce a lot of power, but it is also more vulnerable to enemy weapons fire. We can store more energy by building batteries. Select the battery below.
+
+Batteries can be placed anywhere on the fort, but be aware that if a battery explodes it will damage anything nearby. Chain reactions can occur if they are placed too close.
+
+You are a natural. Developing your economy early in a battle will help you gain the advantage over the opponent. Now combine your knowledge of building and resources. Expand your foundations to build three mines and place a turbine with 100% efficiency.
+
+If you make a mistake remember that some resources can be recovered by right clicking on an item and selecting the bin icon or pressing the delete key.
+
+Expertly done. Do you have a background in mining? A high metal supply will allow you to build and repair faster.
+
+It's good to achieve this efficiency, but it does require a tall fort, which means more investment, a bigger target for the enemy, and more struts to repair.
+
+You now have a working knowledge of resources. Experiment until you are ready to learn about weapons.
+
+
+
+Every device on the fort has mass, increasing the stress on the structure. Make sure your fort is built well enough to support the devices you need.
+
+Mines must be built on deposits of ore near the foundations of the fort. You may need to build new foundations to make an ore deposit available.
+
+This device must be built on the fort. Find a free platform or build a new one on the fort.
+
+Devices can't overlap. Find a free space or build a new platform.
+
+You have insufficient resources to build this. Wait to save and consider building new resource collectors.

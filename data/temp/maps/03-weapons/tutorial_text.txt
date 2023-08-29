@@ -1,0 +1,27 @@
+With out mobile units we have had to develop a comprehensive arsenal to cover all situations. The reactor can fabricate machine guns and sniper rifles, but additional buildings are necessary to produce our advanced weaponry.
+
+For now, select the machine. gun.
+
+The machine. gun is quick to reload but has a low precision at range. We use it for defense against mortars and missiles. Construct one on the front of the fort.
+
+We've been attacked! Weapons are vulnerable when exposed. You had better build a door before trying that again.
+
+Remember to brace the new strut to prevent it falling off. 
+
+Once the door is complete, build a new machine gun behind it.
+
+The armored door can deflect light fire and take more damage than bracing. Keeping doors shut while weapons are not in use will save lives.
+
+--While the machine. gun is building, repair the damaged bracing by placing the mouse nearby and hitting the R key. You can also use the context menu.
+
+The door is in the way of the weapon. To open it, use the context menu, double click on it, or my favourite: select the weapon and then click in the aiming arc in front of the gun.
+
+Now left click on the weapon to select it.
+
+Let's get some pay back! Move the mouse inside the arc in front of the weapon to aim, and then left click to fire.
+
+That must have hurt! The other weapons behave much the same way, except for missiles which require a sniper to paint the target.
+
+Notice that we are unable to see inside the enemy fort. The reactor in this case is partially hidden. Let's shoot up their bracing to get at the enemy's reactor to finish them off.
+
+Nice! The enemy in unable recover when the reactor goes, so it's time to party.
