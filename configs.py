@@ -23,6 +23,18 @@ class Load:
         self.mods_Tfolders = []
         self.maps_Tfolders = []
 
+    def clear(self):
+        self.mods_folders = []
+        self.mods_names = []
+        self.maps_folders = []
+        self.maps_names = []
+        self.mods_Ffolders = []
+        self.mods_Fnames = []
+        self.maps_Ffolders = []
+        self.maps_Fnames = []
+        self.mods_Tfolders = []
+        self.maps_Tfolders = []
+
     def load_mods(self):
         # Clear existing lists before loading
         self.mods_folders.clear()
