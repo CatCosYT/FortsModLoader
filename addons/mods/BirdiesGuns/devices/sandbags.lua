@@ -1,1 +1,0 @@
-HitPoints = 300.0
