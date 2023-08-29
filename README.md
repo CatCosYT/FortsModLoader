@@ -1,0 +1,3 @@
+# FortsModLoader
+
+pip install customtkinter
